@@ -1,12 +1,13 @@
 # Searching_Algorithm
 
-// Linear Search Exercise
-// Write a function called linearSearch which accepts an array and a value, 
-// and returns the index at which the value exists. If the value does not exist in the array, return -1.
 
-// Don't use indexOf to implement this function!
+> ## 1) Linear Search Exercise: :cry: 
+> Write a function called linearSearch which accepts an array and a value, 
+> and returns the index at which the value exists. If the value does not exist in the array, return -1.
 
+> Don't use indexOf to implement this function!
 
+``` js
 function linearSearch(arr, val){
     for(var i = 0; i < arr.length; i++){
         if(arr[i] === val) return i;
@@ -21,17 +22,18 @@ console.log(linearSearch([100], 100)) // 0
 console.log(linearSearch([1,2,3,4,5], 6)) // -1
 console.log(linearSearch([9, 8, 7, 6, 5, 4, 3, 2, 1, 0], 10)) // -1
 console.log(linearSearch([100], 200)) // -1
+```
 
 
+> ## 2) Binary Search Exercise: :wink: 
+> Write a function called binarySearch which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1.
 
-// Binary Search Exercise
-// Write a function called binarySearch which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1.
+> This algorithm should be more efficient than linearSearch - you can read how to implement it here 
+> - https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search and here 
+> - https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
 
-// This algorithm should be more efficient than linearSearch - you can read how to implement it here 
-// - https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search and here 
-// - https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
-
-// Original Solution
+> Original Solution
+``` js
 function binarySearch(arr, elem) {
     var start = 0;
     var end = arr.length - 1;
@@ -49,8 +51,9 @@ function binarySearch(arr, elem) {
     }
     return -1;
 }
-
-// Refactored Version
+```
+> Refactored Version
+``` js
 function binarySearch(arr, elem) {
     var start = 0;
     var end = arr.length - 1;
@@ -80,11 +83,11 @@ console.log(binarySearch([
   5, 6, 10, 13, 14, 18, 30, 34, 35, 37, 
   40, 44, 64, 79, 84, 86, 95, 96, 98, 99
 ], 100)) // -1
+```
 
-
-// Naive_String_Search
-// Count the number of times a smaller string appears in a longer string
-
+> ## 3) Naive_String_Search: :cry: 
+> Count the number of times a smaller string appears in a longer string
+``` js
 function naiveSearch(long, short){
     var count = 0;
     for(var i = 0; i < long.length; i++){
@@ -95,6 +98,7 @@ function naiveSearch(long, short){
     }
     return count;
 }
+```
 
 console.log(naiveSearch("lorie loled", "lol")) // 1
 
