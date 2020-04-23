@@ -1,6 +1,6 @@
 # Searching_Algorithm
 
-
+![Searching](https://github.com/NoriKaneshige/Searching_Algorithm/blob/master/Searching.png)
 > ## 1) Linear Search Exercise: :cry: 
 > Write a function called linearSearch which accepts an array and a value, 
 > and returns the index at which the value exists. If the value does not exist in the array, return -1.
@@ -27,10 +27,12 @@ console.log(linearSearch([100], 200)) // -1
 
 > ## 2) Binary Search Exercise: :wink: 
 > Write a function called binarySearch which accepts a sorted array and a value and returns the index at which the value exists. Otherwise, return -1.
-
 > This algorithm should be more efficient than linearSearch - you can read how to implement it here 
 > - https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search and here 
 > - https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
+
+
+![Binary_Search](https://github.com/NoriKaneshige/Searching_Algorithm/blob/master/Binary_Search.png)
 
 > Original Solution
 ``` js
@@ -87,6 +89,8 @@ console.log(binarySearch([
 
 > ## 3) Naive_String_Search: :cry: 
 > Count the number of times a smaller string appears in a longer string
+
+![Naive_String_Search](https://github.com/NoriKaneshige/Searching_Algorithm/blob/master/Naive_String_Search.png)
 ``` js
 function naiveSearch(long, short){
     var count = 0;
